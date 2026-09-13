@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Unblocked Cool Math Games 10x — Play 450+ Browser Games</title>
+<meta content="Play Unblocked Cool Math Games 10x with 450+ browser games, including logic, puzzle, strategy, skill, arcade, sports and racing titles with original guides." name="description"/>
+<link href="https://cool-math-games-10x.github.io/" rel="canonical"/>
+<meta content="Unblocked Cool Math Games 10x — Play 450+ Browser Games" property="og:title"/>
+<meta content="Play Unblocked Cool Math Games 10x with 450+ browser games, including logic, puzzle, strategy, skill, arcade, sports and racing titles with original guides." property="og:description"/>
+<meta content="https://cool-math-games-10x.github.io/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="#080b14" name="theme-color"/>
+<link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/style.css" rel="stylesheet"/><link href="assets/nav.css" rel="stylesheet"/>
+<link href="assets/home.css" rel="stylesheet"/>
+<link href="assets/ads.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Unblocked Cool Math Games 10x","url":"https://cool-math-games-10x.github.io/","description":"A browser-game catalog with 450+ titles, search, categories, favorites and original game guides."},{"@type":"Organization","name":"Unblocked Cool Math Games 10x","url":"https://cool-math-games-10x.github.io/"}]}</script></head>
+<body><div id="preroll"></div>
+<script>
+	function getScript(src) {
+    var headElm = document.head || document.getElementsByTagName('head')[0];
+    var script = document.createElement("script");
+    var once = true;
+    script.async = "async";
+    script.type = "text/javascript";
+    script.charset = "UTF-8";
+    script.src = src;
+    script.onload = script.onreadystatechange = function() {
+        if (once && (!script.readyState || /loaded|complete/.test(script.readyState))) {
+            once = false;         
+            script.onload = script.onreadystatechange = null;
+			console.log("okeey");
+        }
+    };
+	  headElm.appendChild(script);
+}
+
+ 
+	getScript("//api.adinplay.com/libs/aiptag/pub/AGO/agario.surf/tag.min.js");
+ 
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left"
+	}
+
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center',
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('preroll')},
+			AIP_COMPLETE: function (evt){ try{ if(window.__pr_cb){ window.__pr_cb(); } }catch(e){} finally{ window.__pr_cb=null; } },
+			AIP_REMOVE: function ()  {}
+		});
+	});
+
+	function show_preroll(callback) {
+		window.__pr_cb = (typeof callback === 'function') ? callback : null;
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startPreRoll(); });
+		} else {
+			if (window.__pr_cb) { var cb = window.__pr_cb; window.__pr_cb = null; cb(); }
+		}
+	}
+</script>
+<header class="site-header">
+<a class="brand" href="/"><img alt="Unblocked Cool Math Games 10x" src="assets/logo.svg"/><span>Unblocked Cool Math Games 10x</span></a>
+<nav aria-label="Main navigation" class="main-nav"><a aria-current="page" class="active" href="/">Home</a><a href="/#games">Games</a><a href="popular-games.html">Popular</a><a href="top-unblocked-games.html">Top Unblocked</a><a href="new-games.html">New</a><a href="favorite-games.html">Favorites</a><div class="nav-dropdown"><button type="button">Categories ▾</button><div class="dropdown-menu"><a href="action-games.html">Action &amp; Adventure</a><a href="strategy-games.html">Strategy &amp; Puzzle</a><a href="casual-games.html">Casual &amp; Idle</a><a href="driving-games.html">Driving &amp; Sports</a></div></div><div class="nav-dropdown"><button type="button">Information ▾</button><div class="dropdown-menu"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="dmca.html">DMCA</a></div></div></nav>
+</header>
+<main>
+<section class="hero">
+<h1 class="visually-hidden">Unblocked Cool Math <span>Games 10x</span></h1>
+<div class="search-row">
+<label class="search"><span>⌕</span><input autocomplete="off" id="search" placeholder="Search 450 games…" type="search"/></label>
+<button class="primary" id="random">Surprise me</button>
+</div><div class="ad-slot-center">
+<div class="ad-placeholder" id="agario-surf_970x250">
+<script type="text/javascript">
+      aiptag.cmd.display.push(function() { aipDisplayTag.display('agario-surf_970x250'); });
+    </script>
+</div>
+</div>
+</section>
+<section class="saved-section home-showcase" id="popular"><div class="section-head"><div><h2>Popular Games</h2></div><a class="section-link" href="popular-games.html">View popular games →</a></div><div class="game-grid" id="popularGrid"></div></section><section class="home-ai-between"></section>
+<section class="catalog" id="games">
+<div class="section-head"><div><h2>All games</h2></div><span class="result-count" id="resultCount"></span></div>
+<div class="controls">
+<div aria-label="Game categories" class="chips" id="categories"></div>
+<select aria-label="Sort games" id="sort"><option value="name">A–Z</option><option value="popular">Most popular</option><option value="newest">Newest</option></select>
+</div>
+<div aria-live="polite" class="game-grid" id="gameGrid"></div>
+<div class="empty" hidden="" id="empty"><strong>No games found</strong><span>Try another name or category.</span></div>
+<button class="load-more" id="loadMore">Load more games</button>
+</section>
+<section class="saved-section home-showcase" hidden="" id="favorites"><div class="section-head"><div><span class="kicker">Your list</span><h2>Favorite Games</h2></div><a class="section-link" href="favorite-games.html">View favorites →</a></div><div class="game-grid" id="favoriteGrid"></div></section>
+<section class="saved-section" hidden="" id="recent"><div class="section-head"><div><span class="kicker">Jump back in</span><h2>Recently Played</h2></div></div><div class="game-grid compact" id="recentGrid"></div></section>
+<section class="about">
+<span class="kicker">Think fast. Play smarter.</span>
+<h2>Unblocked Cool Math Games 10x — logic, skill, puzzle and arcade games</h2>
+<p><strong>Unblocked Cool Math Games 10x</strong> is an independent browser-game catalog built around the kinds of games people often search for as <strong>Cool Math Games</strong>, <strong>Coolmath Games</strong>, <strong>Cool Math Games Unblocked</strong>, <strong>math games</strong>, <strong>logic games</strong>, <strong>skill games</strong> and <strong>puzzle games</strong>. The collection expands beyond math-only titles into strategy, sports, driving, action and casual games while keeping quick discovery and readable game guides at the center.</p>
+</section>
+<section class="home-seo" aria-labelledby="home-seo-title">
+<span class="kicker">Cool Math Games 10x guide</span>
+<h2 id="home-seo-title">Cool Math Games, logic games and skill games in one focused catalog</h2>
+<p><strong>Unblocked Cool Math Games 10x</strong> is organized for players who enjoy games that are easy to understand but still reward better timing, planning, pattern recognition or problem solving. Searches such as <strong>Cool Math Games</strong>, <strong>Coolmath Games</strong>, <strong>Cool Math Games Unblocked</strong> and <strong>Cool Math Games 10x</strong> often point to the same broader idea: quick browser games that feel simple at first and become more interesting as you learn how they work.</p>
+<div class="home-seo-grid">
+<div><h3>Logic, puzzle and strategy games</h3><p>Many strong browser games are built around recognizing patterns, choosing an efficient order of actions, preserving future options or solving a compact problem under light time pressure. This catalog gives those games a clear home without pretending every title is literally a math exercise.</p></div>
+<div><h3>Skill games with short learning curves</h3><p>Precision platformers, timing games, driving challenges and arcade titles can be just as mentally engaging because improvement comes from observation and controlled execution. Search, categories, favorites and recently played tools make it easy to compare different kinds of challenge without losing your place.</p></div>
+</div>
+<h3>Original guides instead of thin game pages</h3>
+<p>Every game page includes a rewritten guide covering its controls, core loop and practical ways to improve. The goal is to give each title meaningful context rather than surrounding a player with repeated paragraphs that say the same thing.</p>
+<h3>Popular starting points</h3>
+<p>The catalog includes familiar browser titles across puzzle, logic, sports, racing, action and arcade categories. Start with a known game, use related recommendations to stay within the same style, or switch categories when you want a different kind of challenge.</p>
+<h3>What “unblocked” means here</h3>
+<p>“Unblocked Cool Math Games” is a common search phrase for browser-game access. Availability still depends on the browser, device, upstream game host and local network policy. Unblocked Cool Math Games 10x does not claim to bypass administrator-controlled restrictions.</p>
+<h3>Independent catalog</h3>
+<p>Unblocked Cool Math Games 10x is an independent browser-game directory and is not presented as an official site of any third-party publisher, school platform or game network.</p>
+</section>
+</main>
+<footer><p class="footer-seo-copy">Play Unblocked Cool Math Games 10x and discover hundreds of action, puzzle, sports, racing and casual browser games.</p><a class="brand" href="/"><img alt="" src="assets/logo.svg"/><span>Unblocked Cool Math Games 10x</span></a><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="dmca.html">DMCA</a></div><p><a href="LICENSE.txt">Open-source notice</a></p></footer>
+<script defer="" src="assets/app.js"></script>
+</body>
+</html>
